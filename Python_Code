@@ -1,0 +1,80 @@
+# 📊 Exploratory Data Analysis (EDA) - Complete Script
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# -------------------------------
+# 1. Load Dataset
+# -------------------------------
+df = pd.read_csv("your_dataset.csv")  # change file name if needed
+
+print("\n✅ Dataset Loaded Successfully\n")
+
+# -------------------------------
+# 2. Basic Information
+# -------------------------------
+print("🔹 First 5 Rows:\n", df.head())
+print("\n🔹 Dataset Shape:", df.shape)
+print("\n🔹 Columns:\n", df.columns)
+print("\n🔹 Data Types:\n")
+print(df.info())
+
+# -------------------------------
+# 3. Statistical Summary
+# -------------------------------
+print("\n🔹 Statistical Summary:\n", df.describe())
+
+# -------------------------------
+# 4. Missing Values
+# -------------------------------
+print("\n🔹 Missing Values:\n", df.isnull().sum())
+
+# Handling missing values (example)
+df = df.dropna()
+
+# -------------------------------
+# 5. Duplicate Values
+# -------------------------------
+print("\n🔹 Duplicate Rows:", df.duplicated().sum())
+df = df.drop_duplicates()
+
+# -------------------------------
+# 6. Data Visualization
+# -------------------------------
+
+# Histogram
+df.hist(figsize=(10, 6))
+plt.suptitle("Histograms of Numerical Features")
+plt.show()
+
+# Boxplot (Outlier Detection)
+plt.figure(figsize=(10, 5))
+sns.boxplot(data=df)
+plt.title("Boxplot for Outlier Detection")
+plt.show()
+
+# -------------------------------
+# 7. Correlation Analysis
+# -------------------------------
+plt.figure(figsize=(8, 5))
+corr = df.corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm')
+plt.title("Correlation Heatmap")
+plt.show()
+
+# -------------------------------
+# 8. Value Counts (Categorical)
+# -------------------------------
+for col in df.select_dtypes(include='object').columns:
+    print(f"\n🔹 Value Counts for {col}:\n")
+    print(df[col].value_counts())
+
+# -------------------------------
+# 9. Insights (Basic Print)
+# -------------------------------
+print("\n📌 EDA Completed Successfully!")
+print("✔ Dataset cleaned (missing & duplicates handled)")
+print("✔ Trends, patterns, and correlations visualized")
+print("✔ Ready for further analysis or ML")
