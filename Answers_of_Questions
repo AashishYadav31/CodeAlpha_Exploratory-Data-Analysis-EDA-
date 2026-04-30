@@ -1,0 +1,48 @@
+📊 EDA – Answers to Meaningful Questions
+1. Dataset Size and Structure
+
+The dataset contains multiple rows and columns representing different features. It provides a structured format where each row represents an observation and each column represents a variable.
+
+2. Types of Variables
+
+The dataset includes both numerical and categorical variables. Numerical variables represent measurable quantities, while categorical variables represent labels or groups.
+
+3. Missing Values
+
+Some missing values were identified in the dataset. These were handled using appropriate techniques such as removing null values or filling them with suitable replacements.
+
+4. Duplicate Records
+
+Duplicate entries were checked and removed to ensure data accuracy and avoid redundancy in analysis.
+
+5. Key Features
+
+Certain variables were identified as important based on their influence and relevance in the dataset. These features play a major role in determining patterns and relationships.
+
+6. Statistical Summary
+
+The statistical summary shows measures like mean, median, standard deviation, minimum, and maximum values. This helps in understanding the distribution and spread of the data.
+
+7. Outliers Detection
+
+Outliers were detected using visualization techniques such as boxplots. These extreme values may affect the overall analysis and were considered carefully.
+
+8. Patterns and Trends
+
+Various patterns and trends were observed in the dataset through visualizations. These trends help in understanding how data behaves over different variables.
+
+9. Relationships Between Variables
+
+Correlation analysis revealed relationships between variables. Some variables showed strong positive or negative relationships, indicating dependency.
+
+10. Data Distribution
+
+The data distribution was analyzed using histograms. Some variables followed normal distribution, while others showed skewness.
+
+11. Data Quality Issues
+
+Issues such as missing values, duplicates, and inconsistent data were identified and handled to improve data quality.
+
+12. Insights and Conclusions
+
+The EDA process provided meaningful insights about the dataset, including trends, relationships, and anomalies. These insights can be used for further analysis or machine learning tasks.
