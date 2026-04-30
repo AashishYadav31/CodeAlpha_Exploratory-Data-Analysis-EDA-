@@ -1,0 +1,12 @@
+What is the size and structure of the dataset (rows, columns, features)?
+What types of variables are present (numerical, categorical, datetime)?
+Are there any missing or null values, and how are they distributed?
+Are there any duplicate records in the dataset?
+What are the key variables/features that influence the data most?
+What does the statistical summary (mean, median, std) reveal?
+Are there any outliers or unusual values present?
+What patterns or trends exist within the data?
+Is there any relationship or correlation between variables?
+Do the data distributions appear normal, skewed, or uniform?
+Are there any data quality issues (incorrect values, inconsistencies)?
+What insights can be derived to support decision-making or predictions?
